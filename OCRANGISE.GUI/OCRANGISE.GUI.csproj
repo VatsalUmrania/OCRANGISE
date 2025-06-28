@@ -5,11 +5,15 @@
 		<UseWPF>true</UseWPF>
 		<UseWindowsForms>true</UseWindowsForms>
 		<Nullable>enable</Nullable>
-		<WarningsAsErrors />
-		<WarningsNotAsErrors>CS8602;CS8604</WarningsNotAsErrors>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\OCRANGISE.Core\OCRANGISE.Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="tessdata\**\*">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
 	</ItemGroup>
 </Project>

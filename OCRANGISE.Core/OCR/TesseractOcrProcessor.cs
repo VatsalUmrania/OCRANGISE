@@ -10,7 +10,7 @@ namespace OCRANGISE.Core.OCR
         private readonly string _tessdataPath;
         private readonly string _language;
 
-        public TesseractOcrProcessor(string tessdataPath = null, string language = "eng")
+        public TesseractOcrProcessor(string? tessdataPath = null, string language = "eng")
         {
             // Fix 1: Use absolute path instead of relative path
             _tessdataPath = tessdataPath ?? Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "tessdata");
